@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: ai-coder-backend
+  datasource:
+    url: jdbc:mysql://localhost:3306/ai_coder?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+server:
+    port: 8081
+langchain4j:
+  community:
+    dashscope:
+      chat-model:
+        model-name: qwen-max
+        api-key: 
+      embedding-model:
+        model-name: text-embedding-v4
+        api-key: 
+      streaming-chat-model:
+        model-name: qwen-max
+        api-key: 
+bigmodel:
+  api-key: 
